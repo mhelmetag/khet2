@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import Board from "./components/Board";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <img src={logo} alt="logo" className="logo" />
+        <h1>Khet</h1>
+        <p>The best game since sliced bread</p>
       </header>
-    </div>
+
+      <main>
+        <Board />
+      </main>
+
+      <footer>
+        <p>Built by Maxworld Technologies</p>
+      </footer>
+    </>
   );
 }
 
