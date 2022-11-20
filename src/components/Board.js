@@ -5,7 +5,7 @@ export default function Board() {
   const boardBoss = new BoardBoss();
 
   return (
-    <>
+    <div className="board">
       {boardBoss.board.map((row, i) => {
         const rowElements = row.map((pieceBoss, j) => {
           if (pieceBoss) {
@@ -25,6 +25,6 @@ export default function Board() {
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
