@@ -3,13 +3,14 @@ header {
 }
 
 header .logo {
-  width: 200px;
+  width: 20vw;
 }
 
+/* Path: src/components/Board.css */
+
 main .board {
-  border: 1px solid lightgrey;
-  margin: 0 200px;
-  padding: 10px 0;
+  border: 1px solid grey;
+  width: 100%;
 }
 
 main .row {
@@ -18,14 +19,12 @@ main .row {
 }
 
 main .cell {
-  height: 50px;
-  width: 50px;
-  margin: 5px;
+  width: 10%; /* 8 rows of 10 cells */
+  border: 1px solid grey;
   background-color: lightgrey;
   text-align: center;
 }
 
 footer {
-  padding: 10px;
   text-align: center;
 }
